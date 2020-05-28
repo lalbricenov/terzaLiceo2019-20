@@ -1,0 +1,120 @@
+<!-- hypertext markup language -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi primera página web</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* CSS: cascading style sheet */
+      /* Se usa # para seleccionar un elemento por id */
+      #miTitulo {
+        color: blue;
+        font-size: 60px;
+        background-color: burlywood;
+      }
+
+      /* Se usa el nombre de una etiqueta de html para 
+      seleccionar todos los de ese tipo */
+      h2 {
+        color: red;
+      }
+      p {
+        background-color: cyan;
+      }
+
+      /* se usa . para seleccionar clases */
+      .explicativo {
+        color: green;
+      }
+      .conclusion {
+        color: yellow;
+      }
+
+      #miImagen {
+        /* margin esta por fuera del elemento */
+        margin: 30px;
+        /* padding hace parte del elemento */
+        padding: 40px;
+        /* border hace una linea alrededor del objeto */
+        border: solid 5px;
+        border-radius: 30px;
+
+        /* tamaño de la imagen */
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="miTitulo">Terza Liceo 2019-20</h1>
+    <h2>Terza Liceo 2019-20</h2>
+    <p class="explicativo">
+      <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="blank"
+        >Lorem ipsum</a
+      >
+      dolor sit amet, consectetur adipisicing elit. Nisi, temporibus odio
+      reiciendis tempora corporis ipsum magnam unde iure necessitatibus expedita
+      praesentium eius voluptatum earum ipsa sapiente et in animi magni.
+    </p>
+    <!-- <img src="./images/lorem.png" alt="Imagen lorem ipsum" /> -->
+    <img
+      src="https://picsum.photos/400/400"
+      alt="Imagen aleatoria"
+      id="miImagen"
+    />
+
+    <p class="explicativo">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quibusdam.
+      Eaque accusamus, magnam cum soluta eum ab harum nesciunt optio placeat
+      eius ullam voluptate iste aut illo rem ratione impedit?Lorem ipsum dolor
+      sit amet, consectetur adipisicing elit. Repellendus molestiae vero at
+      quasi facere, ea id ex expedita exercitationem ratione placeat repudiandae
+      deleniti dolores, iste quod, architecto dolor ad praesentium.
+    </p>
+    <h2>Tabla de estudiantes</h2>
+
+    <table class="table conclusion">
+      <tr>
+        <!-- tr table row
+        th table header
+        td table data -->
+        <th>Apellido</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+      </tr>
+      <tr>
+        <td>Alvarado</td>
+        <td>Julian</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Becerra</td>
+        <td>Mariana</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td>Sánchez</td>
+        <td>Felipe</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Bermúdez</td>
+        <td>María</td>
+        <td>16</td>
+      </tr>
+    </table>
+    <p class="conclusion">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab expedita
+      impedit magni in velit sint beatae adipisci, assumenda numquam error ex!
+      Inventore minima, aut odit sequi molestiae aperiam eligendi dignissimos.
+    </p>
+    <h4 class="conclusion">Terza Liceo 2019-20</h4>
+    <h5>Terza Liceo 2019-20</h5>
+  </body>
+</html>

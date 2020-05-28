@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prueba de CSS grid</title>
+    <style>
+      body {
+        display: grid;
+        grid-template-columns: 300px 100px 300px;
+        grid-template-rows: 200px 400px 200px;
+        grid-template-areas:
+          "encabezado encabezado encabezado"
+          "texto1 texto1 img1"
+          "img2 texto2 texto2";
+      }
+      h1 {
+        grid-area: encabezado;
+      }
+      #texto1 {
+        grid-area: texto1;
+      }
+      #texto2 {
+        grid-area: texto2;
+      }
+      #img1 {
+        grid-area: img1;
+        width: 100%;
+        height: 100%;
+      }
+      #img2 {
+        grid-area: img2;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SEGUNDA LEY DE LA TERMODINÁMICA</h1>
+    <p id="texto1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque libero
+      dicta quibusdam itaque? Harum blanditiis officia consequatur, asperiores
+      facilis, repudiandae tenetur quas cum vel incidunt deserunt ratione amet
+      ab nam?
+    </p>
+    <img id="img1" src="https://picsum.photos/400/400" alt="imagenPrueba" />
+    <div id="texto2">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sapiente
+        similique debitis officiis necessitatibus neque ex saepe distinctio
+        fugiat, accusantium illum, error alias atque unde magnam! Perspiciatis
+        nam consequatur inventore?
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab placeat
+        amet atque! Atque perferendis architecto a quam placeat, sit corporis
+        delectus sapiente odit, consequuntur fugiat. Ab, velit. Doloribus,
+        dolore non.
+      </p>
+    </div>
+
+    <img id="img2" src="https://picsum.photos/400/400" alt="imagenPrueba" />
+  </body>
+</html>
